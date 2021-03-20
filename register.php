@@ -16,7 +16,7 @@
 <div class="w3-container w3-blue">
   <h2>Sign Up</h2>
 </div>    
-<form class="w3-container" action="authentification_2.php" method="post" autocomplete="off">
+<form class="w3-container" action="authenticate_2.php" method="post" autocomplete="off">
 	
 <p>
 <input class="w3-input" type="text" name="username" id="username" style="width:90%"  required>
@@ -32,6 +32,8 @@
 
 
 <p><center><button type="submit" value="Register" class="w3-button w3-black w3-round-xxlarge">Sign Up</button></center></p>
+<center><a href="login.php">Already have a account? Log in</a></center>
+<br>
 </form>
 </div>
 </div>

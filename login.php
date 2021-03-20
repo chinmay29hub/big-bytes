@@ -24,6 +24,9 @@
 
 
 <p><center><button type="submit" value="submit" class="w3-button w3-black w3-round-xxlarge">Login</button></center></p>
+<center><a href="register.php">Sign Up?</a></center>
+<br>
+
 </form>
 </div>
 </div>
