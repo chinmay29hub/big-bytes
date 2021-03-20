@@ -99,15 +99,15 @@ body, html {
 <br>
 <p>      
 <label class="w3-text-grey">Website</label>
-<input class="w3-input w3-border w3-animate-input" type="text" name="website" id="website" style="width:40%;" placeholder="Enter Website" required></p>
+<input class="w3-input w3-border w3-animate-input" type="text" name="website" id="website" style="width:60%;" placeholder="Enter Website" required></p>
 </p>
 <p>      
 <label class="w3-text-grey">Username</label>
-<input class="w3-input w3-border w3-animate-input" type="text" name="username" id="username" style="width:40%;" placeholder="Enter username" required></p>
+<input class="w3-input w3-border w3-animate-input" type="text" name="username" id="username" style="width:60%;" placeholder="Enter username" required></p>
 </p>
 <p>      
 <label class="w3-text-grey">Password</label>
-<input class="w3-input w3-border w3-animate-input" type="password" name="password" id="password" style="width:40%;" placeholder="Enter Password" required></p>
+<input class="w3-input w3-border w3-animate-input" type="password" name="password" id="password" style="width:60%;" placeholder="Enter Password" required></p>
 </p>
 <br>
   
