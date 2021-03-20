@@ -9,7 +9,7 @@
 
 <body>
 	
-	<div class="w3-half w3-display-middle">
+	<div class="w3-half w3-display-middle" >
 <div class="w3-card-4  w3-margin">
 <div class="w3-container w3-blue">
   <h2>Login</h2>
