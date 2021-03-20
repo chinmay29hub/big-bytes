@@ -47,7 +47,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">BIg-BYTES</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">BIG-BYTES</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -73,6 +73,7 @@ body, html {
   <!--<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
   <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="logout.php" class="w3-bar-item w3-button"><i class="fa fa-sign-out "></i>LOGOUT</a>
 </nav>
 
 <!-- Header with full-height image -->
