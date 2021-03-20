@@ -22,18 +22,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
   height: 100%;
   line-height: 1.8;
+  scroll-behavior: smooth;
 }
 
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/w3images/mac.jpg");
+  background-image: url("team/mac.gif");
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+.w3-container {
+  
+  
+  
 }
 </style>
 <body>
@@ -41,13 +47,13 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">BIg-BYTES</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -63,43 +69,43 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <!--<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
+  <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-jumbo w3-hide-small w3-text-rainbow">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-grey">Start something that matters</span><br>
     <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="#" class="fa fa-facebook-official w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-instagram w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-snapchat w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-pinterest-p w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-twitter w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-linkedin w3-hover-opacity w3-icon w3-button"></a>
   </div>
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-large">✨😊😁😍😂🤔✨</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">College</p>
+      <p>We are from Vidyavardhini's College Of Engineering & Technology pursuing our Computer Engineering degree.</p>
     </div>
     <div class="w3-quarter">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Projects</p>
+      <p>We have done many projects in Machine learning, AI, Web-development etc. Here is one of our sample project.<button class="w3-button w3-white w3-border-transparent w3-round-large"><a href="https://easycvguide.github.io/EasyCvGuide/html/index.html"> Our Project</a></button></p>
     </div>
     <div class="w3-quarter">
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
@@ -114,7 +120,7 @@ body, html {
   </div>
 </div>
 
-<!-- Promo Section - "We know design" -->
+<!-- Promo Section - "We know design"
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -126,47 +132,47 @@ body, html {
       <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
+<div align="center" class="w3-container w3-row-padding w3-section w3-stretch " style="padding:100px 8px " id="team">
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+  <div class="w3-row-padding " style="margin-top:64px margin-left: 70px">
+    <div class="w3-col l4 m6 w3-margin-bottom ">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="team/team-3.jpg" alt="Chinmay" style="width:100%">
         <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Chinmay Sonawane</h3>
+          <p align="center" class="w3-opacity">Web Designer</p>
+          <p align="center" >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block" ><a href="https://www.linkedin.com/in/chinmay-sonawane-38474019a/"class="fa fa-envelope w3-padding w3-bar-item w3-button w3-padding"> Contact </a></button></p>
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-col l4 m6 w3-margin-bottom ">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="team/team-2.jpg" alt="Chandan" style="width:100%">
         <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Chandan Patil</h3>
+          <p align="center" class="w3-opacity">Web Designer</p>
+          <p align="center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block w3-padding"><a href="https://www.linkedin.com/in/chandan-patil-515614197/"class="fa fa-envelope w3-padding w3-bar-item w3-button w3-padding"> Contact </a></button></p> </p>
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div  class="w3-col l4 m6 w3-margin-bottom ">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <img src="team/team-1.jpg" alt="Nagesh" style="width:100%">
         <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Nagesh Virkar</h3>
+          <p align="center" class="w3-opacity">Web Designer</p>
+          <p align="center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button  class="w3-button w3-light-grey w3-block"><a href="https://www.linkedin.com/in/nagesh-virkar-b854bb1b9"class="fa fa-envelope w3-padding w3-bar-item w3-button w3-padding"> Contact </a></button> </p>
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <!--<div class="w3-col l3 m6 w3-margin-bottom"><i><a href="https://www.linkedin.com/in/nagesh-virkar-b854bb1b9"class="fa fa-envelope"> Contact </a></button> </p>
       <div class="w3-card">
         <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
         <div class="w3-container">
@@ -174,13 +180,13 @@ body, html {
           <p class="w3-opacity">Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
 </div>
 
-<!-- Promo Section "Statistics" -->
+<!-- Promo Section "Statistics" 
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -198,9 +204,9 @@ body, html {
     <span class="w3-xxlarge">150+</span>
     <br>Meetings
   </div>
-</div>
+</div>-->
 
-<!-- Work Section -->
+<!-- Work Section 
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
@@ -234,18 +240,18 @@ body, html {
       <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- Modal for full size images on click-->
+<!-- Modal for full size images on click
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div> -->
 
-<!-- Skills Section -->
+<!-- Skills Section 
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -270,9 +276,9 @@ body, html {
       </div>
     </div>
   </div>
-</div>
-
-<!-- Pricing Section -->
+</div> -->
+ 
+<!-- Pricing Section 
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
   <h3>PRICING</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
@@ -326,7 +332,7 @@ body, html {
       </ul>
     </div>
   </div>
-</div>
+</div>-->
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
@@ -336,7 +342,7 @@ body, html {
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
+    
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
@@ -348,23 +354,23 @@ body, html {
         </button>
       </p>
     </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <!-- Image of location/map  
+    <img src="team/mac3.gif" class="w3-image " style="margin-top:48px">
   </div>
-</div>
-
+</div> -->
+ 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-grey w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="#" class="fa fa-facebook-official w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-instagram w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-snapchat w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-pinterest-p w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-twitter w3-hover-opacity w3-button"></a>
+    <a href="#" class="fa fa-linkedin w3-hover-opacity w3-icon w3-button"></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Powered by <a href="#" title="TEAM BIG-BYTES" target="_blank" class="w3-hover-text-white w3-bold">TEAM BIG-BYTES</a></p>
 </footer>
  
 <script>
@@ -396,3 +402,4 @@ function w3_close() {
 
 </body>
 </html>
+
