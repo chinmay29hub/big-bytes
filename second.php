@@ -16,6 +16,8 @@ if (!isset($_SESSION['loggedin'])) {
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+</script> 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -136,6 +138,7 @@ body, html {
   <th class="w3-center">Website</th>
   <th class="w3-center">Username</th>
   <th class="w3-center">Password</th>
+  <th class="w3-center">Remove a credential</th>
  
   
   
@@ -144,6 +147,7 @@ body, html {
   <td class="w3-center">sample</td>
   <td class="w3-center">sample</td>
   <td class="w3-center">sample</td>
+  <td class="w3-center"><input class="w3-button w3-small w3-red w3-round-xxlarge w3-hover-blue" type="button" value="Delete"></td>
   
   
   
@@ -157,6 +161,13 @@ body, html {
 </div>
 <br>
 <br>
+
+<script type="text/javascript">
+  $('input[type="button"]').click(function(e){
+   $(this).closest('tr').remove()
+})
+
+</script>
 
 </body>
 </html>
