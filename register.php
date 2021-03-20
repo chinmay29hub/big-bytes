@@ -32,7 +32,7 @@
 
 
 <p><center><button type="submit" value="Register" class="w3-button w3-black w3-round-xxlarge">Sign Up</button></center></p>
-<center><a href="login.php">Already have a account? Log in</a></center>
+<center><a href="index.php">Already have a account? Log in</a></center>
 <br>
 </form>
 </div>
