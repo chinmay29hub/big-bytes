@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['loggedin'])) {
-  header('Location: login.php');
+  header('Location: index.php');
   exit;
 }
 ?>
@@ -49,14 +49,14 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">BIG-BYTES</a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">BIG-BYTES</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="index.php#about" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
+      <a href="index.php#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
       
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="index.php#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="#add" class="w3-bar-item w3-button"><i class="fa fa-plus"></i>ADD</a>
       <a href="#saved" class="w3-bar-item w3-button"><i class="fa fa-floppy-o"></i>SAVED</a>
       <a href="logout.php" class="w3-bar-item w3-button"><i class="fa fa-sign-out "></i>LOGOUT</a>
@@ -73,13 +73,13 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="index.php#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
+  <a href="index.php#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <!--<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
   <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="#add" class="w3-bar-item w3-button"><i class="fa fa-plus"></i>ADD</a>
-  <a href="#saved" class="w3-bar-item w3-button"><i class="fa fa-floppy-o"></i>SAVED</a>
+  <a href="index.php#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#add" onclick="w3_close()"  class="w3-bar-item w3-button"><i class="fa fa-plus"></i>ADD</a>
+  <a href="#saved" onclick="w3_close()"  class="w3-bar-item w3-button"><i class="fa fa-floppy-o"></i>SAVED</a>
   <a href="logout.php" class="w3-bar-item w3-button"><i class="fa fa-sign-out "></i>LOGOUT</a>
 </nav>
 
@@ -94,7 +94,7 @@ body, html {
 <div class="w3-container w3-teal w3-black">
   <h2>Save a Credential</h2>
 </div>
-<form class="w3-container w3-card-4 " action="#" method="post">
+<form class="w3-container w3-card-4 " action="authenticate_3.php" method="post" autocomplete="off">
 
 <br>
 <p>      
@@ -138,16 +138,90 @@ body, html {
   <th class="w3-center">Website</th>
   <th class="w3-center">Username</th>
   <th class="w3-center">Password</th>
-  <th class="w3-center">Remove a credential</th>
+  
  
   
   
 </tr>
 <tr>
-  <td class="w3-center">sample</td>
-  <td class="w3-center">sample</td>
-  <td class="w3-center">sample</td>
-  <td class="w3-center"><input class="w3-button w3-small w3-red w3-round-xxlarge w3-hover-blue" type="button" value="Delete"></td>
+  <td class="w3-center">
+    <?php  
+    $DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'big_bytes';
+// Try and connect using the info above.
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+  // If there is an error with the connection, stop the script and display the error.
+  exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
+$sql = 'SELECT website FROM credentials';
+ $result = mysqli_query($con, $sql);
+ 
+ if (mysqli_num_rows($result) > 0){
+  while($rowData = mysqli_fetch_assoc($result)){
+    echo $rowData["website"];
+    echo "<br>";
+    echo "<br>";
+  }
+}
+?>
+  </td>
+  <td class="w3-center">
+    
+    <?php  
+    $DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'big_bytes';
+// Try and connect using the info above.
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+  // If there is an error with the connection, stop the script and display the error.
+  exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
+$sql = 'SELECT username FROM credentials';
+ $result = mysqli_query($con, $sql);
+ 
+ if (mysqli_num_rows($result) > 0){
+  while($rowData = mysqli_fetch_assoc($result)){
+    echo $rowData["username"];
+    echo "<br>";
+    echo "<br>";
+  }
+}
+?>
+  </td>
+  <td class="w3-center">
+    
+    <?php  
+    $DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'big_bytes';
+// Try and connect using the info above.
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+  // If there is an error with the connection, stop the script and display the error.
+  exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
+$sql = 'SELECT password FROM credentials';
+ $result = mysqli_query($con, $sql);
+ 
+ if (mysqli_num_rows($result) > 0){
+  while($rowData = mysqli_fetch_assoc($result)){
+    echo $rowData["password"];
+    echo "<br>";
+    echo "<br>";
+  }
+}
+?>
+  </td>
+  
   
   
   
@@ -162,12 +236,9 @@ body, html {
 <br>
 <br>
 
-<script type="text/javascript">
-  $('input[type="button"]').click(function(e){
-   $(this).closest('tr').remove()
-})
 
-</script>
 
 </body>
 </html>
+
+

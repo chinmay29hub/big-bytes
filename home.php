@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['loggedin'])) {
-  header('Location: login.php');
+  header('Location: index.php');
   exit;
 }
 ?>
@@ -50,11 +50,13 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">BIG-BYTES</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
       
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="second.php#add" class="w3-bar-item w3-button"><i class="fa fa-plus"></i>ADD</a>
+      <a href="second.php#saved" class="w3-bar-item w3-button"><i class="fa fa-floppy-o"></i>SAVED</a>
       <a href="logout.php" class="w3-bar-item w3-button"><i class="fa fa-sign-out "></i>LOGOUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -68,20 +70,22 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class = "fa fa-info"></i>ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <!--<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
   <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="second.php#add" onclick="w3_close()"  class="w3-bar-item w3-button"><i class="fa fa-plus"></i>ADD</a>
+  <a href="second.php#saved" onclick="w3_close()"  class="w3-bar-item w3-button"><i class="fa fa-floppy-o"></i>SAVED</a>
   <a href="logout.php" class="w3-bar-item w3-button"><i class="fa fa-sign-out "></i>LOGOUT</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small w3-text-rainbow">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-grey">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <span class="w3-jumbo w3-hide-small w3-text-rainbow">Password Manger</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-grey">Simple. Easy. Secure</span><br>
+    <span class="w3-large">A simplest & responsive password manager.</span>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">

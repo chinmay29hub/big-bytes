@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $sql="INSERT INTO `accounts`(`username`, `email`,`password`) VALUES ('$username','$email','$password')";
     if (mysqli_query($con, $sql)) {
 
-        header('Location: login.php');
+        header('Location: index.php');
         
     }
     else 
