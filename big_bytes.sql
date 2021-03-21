@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 20, 2021 at 03:38 PM
+-- Generation Time: Mar 21, 2021 at 04:59 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.2.34
 
@@ -33,16 +33,17 @@ CREATE TABLE `accounts` (
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `accounts`
+-- Table structure for table `credentials`
 --
 
-INSERT INTO `accounts` (`username`, `email`, `password`) VALUES
-('chinmay', 'chinmay@gmail.com', 'Chinmay@33333'),
-('chandu', 'chandu@gmail.com', 'Chandu@33333'),
-('sdssdssdsdsdsdsds', 'chinmay@gmail.com', 'Chinmay@33333'),
-('ffddfd', 'chinmay@gmail.com', 'Chinmay@33333'),
-('test', 'test@gmail.com', 'test');
+CREATE TABLE `credentials` (
+  `website` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
