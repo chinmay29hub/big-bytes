@@ -1,10 +1,16 @@
 # big-bytes
-Hackathon(Recursion 2.0)
+### Hackathon(Recursion 2.0)
 
-ABOUT US : We are team Big-Bytes currently pursuing our degree in computer engineering from VCET
+ABOUT US : We are team Big-Bytes currently pursuing our degree in computer engineering from VCET, Vasai
 
-ABOUT PROJECT: WE HAVE USE PHP AND W3.CSS ANS OUR FROUNT END AND HAVE USE MYSQL FOR OUR DATABASE AND HOSTED WENSITE ON 000WEBHOST
-Problem Statement :
+ABOUT PROJECT: we have used php for building our website with a css framework i.e W3.CSS. We have use MySql Database for the backend.
+
+
+
+### website link: https://jim-jam.000webhostapp.com/
+
+
+#### Problem Statement :
 Create a web-based application that allows you to manage
 passwords or digital credentials (domain, hosting, payment
 gateway, third party logins etc) for a customer and business
@@ -20,4 +26,4 @@ Every information in portal should be logged eg. X employee
 has shown username and password for abc.com website
 
 
-WEBSITE:  https://jim-jam.000webhostapp.com/
+
